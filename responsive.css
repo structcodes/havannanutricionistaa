@@ -1,3 +1,81 @@
+#btn-menu {
+  display: none;
+  font-size: 26px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* menu desktop */
+.nav-list ul {
+  display: flex; 
+  gap: 24px;
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  #btn-menu {
+    display: block;
+    z-index: 1001;
+  }
+
+  .cta-desktop {
+    display: none;
+  }
+
+  /* CONTAINER DO MENU */
+  .nav-list {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+    background: #020617;
+     
+    
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-list.active {
+    right: 0;
+  }
+
+  /* MENU EM COLUNA */
+  .nav-list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    padding-top: 80px;
+  }
+
+  .nav-list ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-list ul li a {
+    display: block;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+
+  /* CTA DENTRO DO MENU */
+  .cta-mobile {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .cta-mobile .cta {
+    width: 85%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+
 /* ===============================
    AJUSTES GERAIS MOBILE
 ================================ */
@@ -19,9 +97,9 @@
    TABLET
 ================================ */
 @media (max-width: 900px) {
-  .menu {
-    display: none; /* menu some no mobile (layout clean) */
-  }
+  /* .menu {
+    display: none; 
+  } */
 
   .hero-content {
     flex-direction: column-reverse;
@@ -57,7 +135,7 @@
   .sobre {
     flex-direction: column;
     text-align: center;
-    gap: 32px;
+    gap: 20px;
   }
 
   .sobre-nutri {
