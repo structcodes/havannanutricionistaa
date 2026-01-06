@@ -132,7 +132,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .sobre {
+   .sobre {
     flex-direction: column;
     text-align: center;
     gap: 20px;
@@ -140,7 +140,7 @@
 
   .sobre-nutri {
     max-width: 100%;
-  }
+  } 
 }
 
 /* ===============================
