@@ -17,9 +17,14 @@ header {
   z-index: 1000;
   background: rgba(0, 0, 0, 0.0);
   -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);     /* efeito vidro (opcional) */
+  backdrop-filter: blur(6px); 
    transition: all 0.3s ease;
    color: #000;
+}
+
+header.scrolled {
+  background: rgba(183, 106, 100, 0.88); /* cor ao rolar */
+  color: #fff;
 }
 
 /* HEADER - CABEÇALHO */
@@ -45,7 +50,7 @@ header {
 }
 
 .nav-list a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
 }
@@ -432,11 +437,24 @@ header {
   background-color: #f7eceb;
 }
 
-.publico > h2 {
-  padding-bottom: 55px;
+/* .publico {
+  width: 100%;
+  padding: 80px 16px;
+} */
+
+.publico h2 {
+  text-align: center;
+  margin-bottom: 48px;
+  font-size: 2rem;
 }
 
+/* .publico > h2 {
+  padding-bottom: 55px;
+} */
+
 .cards-grid {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
