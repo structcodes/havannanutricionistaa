@@ -345,6 +345,10 @@ header.scrolled {
   transition: transform 0.3s ease;
 }
 
+.card-section h3 {
+  margin-bottom:  10px;
+}
+
 .card-section:hover {
   transform: translateY(-6px);
 }
@@ -529,9 +533,9 @@ header.scrolled {
     position: absolute;
     inset: 0;
     background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.15)
+      to bottom,
+    rgba(122, 52, 48, 0.808),
+    rgba(122, 52, 48, 0.205)
     );
     z-index: 1;
   }
@@ -541,7 +545,6 @@ header.scrolled {
     z-index: 2;
     text-align: left;
     color: #fff;
-    /* padding: 32px 24px 48px; */
     max-width: 520px;
     padding-top: 120px;
   }
@@ -690,4 +693,100 @@ header.scrolled {
     font-size: 0.95rem;
     max-width: 100%;
   }
+}
+
+.footer {
+background: #9a4f4b;
+color: #ffffff;
+padding: 60px 20px 20px;
+font-family: Arial, sans-serif;
+}
+
+
+.footer-container {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-around;
+align-items: center;
+/* display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+gap: 40px;
+}
+
+
+.footer h3 {
+font-size: 1.6rem;
+margin-bottom: 10px;
+}
+
+.footer h4 {
+font-size: 1.1rem;
+margin-bottom: 12px;
+}
+
+
+.footer p {
+font-size: 0.95rem;
+line-height: 1.6;
+opacity: 0.9;
+}
+
+
+.footer-links ul {
+list-style: none;
+padding: 0;
+}
+
+
+.footer-links ul li {
+margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+color: #ffffff;
+text-decoration: none;
+opacity: 0.85;
+transition: opacity 0.3s;
+}
+
+
+.footer-links ul li a:hover {
+opacity: 1;
+}
+
+
+.footer-social .social-icons a {
+display: inline-block;
+margin-right: 12px;
+color: #ffffff;
+text-decoration: none;
+font-size: 0.95rem;
+opacity: 0.85;
+}
+
+.footer-social .social-icons a:hover {
+opacity: 1;
+}
+
+
+.footer-bottom {
+border-top: 1px solid rgba(255,255,255,0.1);
+margin-top: 40px;
+padding-top: 20px;
+text-align: center;
+font-size: 0.85rem;
+opacity: 0.8;
+}
+
+
+@media (max-width: 600px) {
+.footer {
+padding: 40px 20px 20px;
+}
+
+.footer-container {
+  flex-direction: column;
+  align-items: flex-start;
+}
 }
