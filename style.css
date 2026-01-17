@@ -27,6 +27,19 @@ header.scrolled {
   color: #fff;
 }
 
+.efeito-txt-topo,
+.efeito-img-topo,
+.title-paragraph,
+.efeito-acompanhamento-1,
+.efeito-acompanhamento-2,
+.efeito-acompanhamento-3,
+.card-section1,
+.card-section2,
+.card-section3,
+.card-section4 {
+  visibility: hidden;
+}
+
 /* HEADER - CABEÇALHO */
 .cabecalho{
   max-width: 1200px; 
